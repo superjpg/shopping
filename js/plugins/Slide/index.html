@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- ①初始化引入样式和库文件 -->
+    <link rel="stylesheet" href="slide.css" />
+    <script src="Slide.js"></script>
+</head>
+
+<body>
+    <!-- ②页面中设置显示区域 -->
+    <div id="slide"></div>
+
+    <script>
+        // ③调用插件方法并传入配置
+        Slide({
+            container : "#slide",
+            img_ls : ["imgs/1.jpg", "imgs/2.jpg", "imgs/3.jpg"],
+            width : 790,
+            height : 340
+        });
+    </script>
+</body>
+
+</html>
